@@ -13,6 +13,11 @@ class BlogsController < ApplicationController
     @blog = Blog.find(params[:id])
   end
 
+  def create
+    Blog.create(blog_parameter)
+    redirect_to blogs_path
+  end
+
   private
 
   def blog_parameter
