@@ -1,19 +1,13 @@
 <p id="notice"><%= notice %></p>
 
 <div class="toppage">
-<h1 class="top">カレンダー</h1>
+<h1 class="top">農業カレンダー</h1>
 <br>
 
 <div class="row">
 <div class="col-md-4">
-	<div class="schedule">今後の予定一覧</div>
+	<div class="schedule">予定</div>
 <table class="table">
-  <thead class="thead-light">
-    <tr>
-      <th>タイトル</th>
-      <th>日程</th>
-    </tr>
-  </thead>
 
   <tbody>
     <% @blogs.each do |blog| %>
@@ -41,7 +35,7 @@
   </div>
 
     <div class="time">
-    <div class="form-tag">日時</div>
+    <div class="form-tag">日付</div>
     <%= form.datetime_select :start_time %>
   </div>
 

@@ -5,10 +5,6 @@ class BlogsController < ApplicationController
     @blog = Blog.new
   end
 
-  def new
-    @blog = Blog.new
-  end
-
   def show
     @blog = Blog.find(params[:id])
   end
