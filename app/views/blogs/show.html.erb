@@ -12,7 +12,7 @@
 
 <p>
   <strong>日時</strong>
-  <%= @blog.start_time.strftime("%m-%d") %>
+  <%= @blog.start_time.strftime("%Y-%m-%d %H:%M") %>
 </p>
 
 <%= link_to '編集', edit_blog_path(@blog) %>

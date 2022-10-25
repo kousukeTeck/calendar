@@ -1,4 +1,5 @@
 class BlogsController < ApplicationController
+  before_action :set_beginning_of_week
 
   def index
     @blogs = Blog.all
@@ -37,5 +38,9 @@ class BlogsController < ApplicationController
 
   def blog_parameter
     params.require(:blog).permit(:title, :content, :start_time)
+  end
+
+  def set_beginning_of_week
+    Date.beginning_of_week = :sunday
   end
 end
