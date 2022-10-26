@@ -1,17 +1,37 @@
+.top{
+  text-align: center;
+  border-bottom: 10px solid yellow;
+}
+
+.side{
+  width: 300px;
+  height: 200px;
+  margin-left: 20px;
+}
+
+.form-tag{
+  font-size: large;
+}
+
+.kome{
+  height: 50px;
+  width: 50px;
+}
+
+.main{
+  display: flex;
+  height: 200px;
+}
+
 .simple-calendar {
-  .day {}
-  .wday-0 {}
-  .wday-1 {}
-  .wday-2 {}
-  .wday-3 {}
-  .wday-4 {}
-  .wday-5 {}
-  .wday-6 {}
-  .start-date {}
-  .prev-month {}
-  .next-month { }
-  .current-month {}
   .has-events {
     background: #98fb98;
   }
  }
+
+.wday-0  {
+  color: red;
+}
+.wday-6  {
+   color: blue;
+} 

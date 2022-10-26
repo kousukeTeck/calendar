@@ -1,28 +1,19 @@
 <p id="notice"><%= notice %></p>
 
-<div class="toppage">
-<h1 class="top">農業カレンダー</h1>
-<br>
+  <h1 class="top"><img src="/assets/food_kome_pack_big.png" class="kome">
+  農業カレンダー
+  <img src="/assets/food_kome_pack_big.png" class="kome">
+  </h1>
+  <br>
 
+
+<div class="main">
 <div class="row">
-<div class="col-md-4">
-	<div class="schedule">予定</div>
-<table class="table">
-
-  <tbody>
-    <% @blogs.each do |blog| %>
-      <tr>
-        <td><%= link_to blog.title , blog %></td>
-        <td><%= blog.start_time.strftime("%Y-%m-%d %H:%M") %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
 
 
-
+<div class="side">
 <%= form_with(model: @blog, local: true) do |form| %>
-
+  <div class="form-tag">予定を追加</div>
   <div class="title">
     <div class="form-tag">タイトル</div>
     <%= form.text_field :title %>
@@ -46,9 +37,26 @@
 </div>
 
 <br>
+</div>
 
+<div class="col-md-4">
+	<div class="schedule">予定一覧</div>
+<table class="table">
+
+  <tbody>
+    <% @blogs.each do |blog| %>
+      <tr>
+        <td><%= link_to blog.title , blog %></td>
+        <td><%= blog.start_time.strftime("%Y-%m-%d %H:%M") %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+</div>
 
 <br>
+<div class="main-under">
 <div class="col-md-8">
 <%= month_calendar events: @blogs do |date, blogs| %>
   <%= date.day %>
@@ -59,3 +67,4 @@
     </div>
   <% end %>
 <% end %>
+</div>
