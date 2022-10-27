@@ -1,24 +1,17 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# アプリケーション名
+農業カレンダー
+# アプリケーション概要
+カレンダーに予定を追加し、編集・削除ができる
+# URL
+https://calendar-38491.herokuapp.com/
+# 利用方法
+予定を入れたい日を指定し、タイトル・内容・日時を入力して登録をする。予定がある日はカレンダーでハイライト表示される。
+# アプリケーションを作成した背景
+農業を行なっている父親に課題を聞き、「日記を手書きで書いているので、過去の日記を見返すのが大変」という課題を抱えている事が判明した。課題を分析した結果、「データ形式で保存されていない」という事が原因であると仮説を立てた。課題を解決するために、過去の日記もすぐ見返す事ができるカレンダーメモアプリを開発することにした。
+# 洗い出した要件
+https://docs.google.com/spreadsheets/d/10CUc5JdzKm7dlEc_E7mRCgdaPxhM4nb8MmHGBbxWeCk/edit#gid=982722306
+# 実装予定の機能
+・天気のデータを取得し保存する
+・年、月、週でカレンダーの表示を変える
+# 工夫したポイント
+予定がある日をハイライト表示するようにした。
