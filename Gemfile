@@ -57,3 +57,7 @@ gem 'simple_calendar', '~> 2.0'
 gem 'rails-i18n'
 gem 'gon'
 gem 'mysql2'
+
+group :production do
+  gem 'pg'
+end
